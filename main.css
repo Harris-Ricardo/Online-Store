@@ -235,13 +235,13 @@
   .about__bio {
     font-size: 1.5rem;
   }
-  .games__bio-image {
+  .store__bio-image {
     height: 40vh;
   }
-  .games__items {
+  .stores__items {
     grid-template-columns: repeat(2, 1fr);
   }
-  .games .text-secondary {
+  .store .text-secondary {
     font-size: 3rem;
   }
   .contact__list {
@@ -249,7 +249,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .games__items {
+  .stores__items {
     grid-template-columns: repeat(3, 1fr);
   }
   .contact__list {
@@ -257,7 +257,7 @@
   }
 }
 @media screen and (min-width: 1600px) {
-  .games__bio-image {
+  .stores__bio-image {
     height: 50vh;
   }
 }
