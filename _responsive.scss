@@ -28,7 +28,7 @@
     font-size: 1.5rem;
   }
 
-  .games {
+  .store {
     &__bio-image {
       height: 40vh;
     }
@@ -48,7 +48,7 @@
 }
 
 @include media-lg {
-  .games {
+  .store {
     &__items {
       grid-template-columns: repeat(3, 1fr);//three columns here
     }
@@ -60,7 +60,7 @@
 }
 
 @include media-xl {
-  .games__bio-image{
+  .store__bio-image{
     height: 50vh;
   }
 }
