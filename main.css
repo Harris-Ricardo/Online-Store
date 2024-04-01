@@ -331,7 +331,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
   .contact__list {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1600px) {
