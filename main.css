@@ -24,6 +24,84 @@
   font-weight: 700;
 }
 
+.stores {
+  padding-bottom: 2rem;
+}
+.stores__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("store.png") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.stores__bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.stores__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.stores__item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.stores__item img {
+  width: 100%;
+}
+.stores__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff652f;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.stores__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.stores__item:hover .stores__btn {
+  opacity: 1;
+}
+.stores__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.stores__btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.stores__btn:hover {
+  color: #fff;
+}
+.stores .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.stores footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -235,13 +313,13 @@
   .about__bio {
     font-size: 1.5rem;
   }
-  .store__bio-image {
+  .stores__bio-image {
     height: 40vh;
   }
   .stores__items {
     grid-template-columns: repeat(2, 1fr);
   }
-  .store .text-secondary {
+  .stores .text-secondary {
     font-size: 3rem;
   }
   .contact__list {
@@ -250,10 +328,10 @@
 }
 @media screen and (min-width: 1024px) {
   .stores__items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
   .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media screen and (min-width: 1600px) {

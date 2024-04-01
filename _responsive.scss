@@ -28,7 +28,7 @@
     font-size: 1.5rem;
   }
 
-  .store {
+  .stores {
     &__bio-image {
       height: 40vh;
     }
@@ -48,19 +48,19 @@
 }
 
 @include media-lg {
-  .store {
+  .stores {
     &__items {
-      grid-template-columns: repeat(3, 1fr);//three columns here
+      grid-template-columns: repeat(5, 1fr);//three columns here
     }
   }
 
   .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @include media-xl {
-  .store__bio-image{
+  .stores__bio-image{
     height: 50vh;
   }
 }
