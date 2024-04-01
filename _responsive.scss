@@ -50,7 +50,7 @@
 @include media-lg {
   .stores {
     &__items {
-      grid-template-columns: repeat(5, 1fr);//three columns here
+      grid-template-columns: repeat(5, 1fr);//five columns here
     }
   }
 
