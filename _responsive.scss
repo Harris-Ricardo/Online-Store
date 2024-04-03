@@ -41,21 +41,49 @@
       font-size: 3rem;
     }
   }
-
+  
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .home{
+    &__name {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+  }
+
+  &--last {
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
 }
 
-@include media-lg {
+@include media-lg { 
+.home{
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &--last {
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+}
+
   .stores {
     &__items {
-      grid-template-columns: repeat(5, 1fr);//five columns here
+      grid-template-columns: repeat(5, 1fr);//three columns here
     }
   }
 
   .contact__list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

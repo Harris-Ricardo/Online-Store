@@ -24,7 +24,7 @@
   }
 
   &__items {
-    width: 60vw;
+    width: 70vw;
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -71,7 +71,7 @@
     width: 100%;
     z-index: 1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     text-align: center;
   }
