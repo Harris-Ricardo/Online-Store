@@ -13,3 +13,17 @@
   max-width: 100%;
   height: 10rem;
 }
+
+/* Styles for screens smaller than 768px (typical mobile phones) */
+@media only screen and (max-width: 767px) {
+  /* CSS styles to apply */
+  .ad-container{
+    display: none;
+  }
+  .ad-slide{
+    display: none;
+  }
+  .ad-slide img{
+    display: none;
+  }
+}
