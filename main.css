@@ -266,7 +266,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 10vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -278,11 +278,64 @@
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-.contact__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: -1rem;
-  font-size: 1.5rem;
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #272727;
+}
+.contact formlabel {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.contact forminput[type=text], .contact form input[type=email], .contact form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+.contact forminput[type=text]:focus, .contact form input[type=email]:focus, .contact form textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+.contact form textarea {
+  resize: vertical;
+}
+.contact form input[type=submit] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.contact form input[type=submit]:hover {
+  background-color: #45a049;
+}
+.contact form .form-group {
+  margin-bottom: 30px;
+}
+.contact form .form-group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact form .form-group label {
+  float: left;
+  width: 30%;
+}
+.contact form .form-group input, .contact form .form-group textarea {
+  float: right;
+  width: 65%;
 }
 .contact .social-icons {
   position: initial;
@@ -323,7 +376,7 @@
     font-size: 3rem;
   }
   .contact__list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .home__name {
     font-size: 3rem;
@@ -351,7 +404,14 @@
     grid-template-columns: repeat(5, 1fr);
   }
   .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-group label, .form-group input, .form-group textarea {
+    float: none;
+    width: 100%;
+  }
+  input[type=submit] {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {

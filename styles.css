@@ -14,6 +14,11 @@
   height: 10rem;
 }
 
+.bottom-link:hover{
+  color: orange;
+  transition: ease-in-out 0.9s;
+}
+
 /* Styles for screens smaller than 768px (typical mobile phones) */
 @media only screen and (max-width: 767px) {
   /* CSS styles to apply */

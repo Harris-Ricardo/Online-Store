@@ -43,7 +43,7 @@
   }
   
   .contact__list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   
   .home{
@@ -78,12 +78,19 @@
 
   .stores {
     &__items {
-      grid-template-columns: repeat(5, 1fr);//three columns here
+      grid-template-columns: repeat(5, 1fr);//five columns here
     }
   }
 
   .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-group label, .form-group input, .form-group textarea {
+    float: none;
+    width: 100%;
+  }
+  input[type="submit"] {
+    width: 100%;
   }
 }
 
