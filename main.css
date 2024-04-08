@@ -337,8 +337,8 @@
   float: right;
   width: 65%;
 }
-.contact .social-icons {
-  position: fixed;
+.contact form .social-icons {
+  position: initial;
   margin-top: 2rem;
 }
 
@@ -457,6 +457,7 @@ main .social-icons {
   left: 1rem;
 }
 main .social-icons a {
+  color: #272727;
   padding: 0.4rem;
   transition: all 0.5s ease-in-out;
 }

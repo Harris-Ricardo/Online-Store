@@ -44,6 +44,7 @@ main{
     left: 1rem;
 
     a {
+      color: $primary-color;
       padding: 0.4rem;
       @include transition-ease;
 
