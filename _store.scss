@@ -1,6 +1,8 @@
 .stores {
   padding-bottom: 2rem;
-
+  p {
+    text-align: center;
+  }
   &__bio-image {
     height: 30vh;
     width: 100%;
@@ -17,6 +19,7 @@
   align-items: center;
   justify-content: flex-end;
 
+  
    .text-secondary{
     font-size: 2rem;
     margin-bottom: 2rem;

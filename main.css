@@ -27,6 +27,9 @@
 .stores {
   padding-bottom: 2rem;
 }
+.stores p {
+  text-align: center;
+}
 .stores__bio-image {
   height: 30vh;
   width: 100%;
