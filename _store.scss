@@ -1,8 +1,12 @@
 .stores {
   padding-bottom: 2rem;
-  h2 {
+  p {
     text-align: center;
+    margin: 2rem auto 0 auto;
+    width: 70vw;
+    font-size: large;
   }
+
   &__bio-image {
     height: 30vh;
     width: 100%;

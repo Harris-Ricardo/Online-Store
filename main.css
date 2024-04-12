@@ -29,6 +29,9 @@
 }
 .stores p {
   text-align: center;
+  margin: 2rem auto 0 auto;
+  width: 70vw;
+  font-size: large;
 }
 .stores__bio-image {
   height: 30vh;
