@@ -14,7 +14,7 @@
   background-size: cover;
 }
 .home__name {
-  font-size: 5rem;
+  font-size: 3rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
@@ -175,7 +175,7 @@
   height: 100vh;
   overflow: hidden;
   background: #272727;
-  list-style-type: 1rem;
+  list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
@@ -398,7 +398,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .home__name {
-    font-size: 3rem;
+    font-size: 200px;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #fff;

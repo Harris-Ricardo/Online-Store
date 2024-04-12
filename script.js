@@ -1,11 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-  let currentSlide = 0;
-  const slides = document.querySelectorAll(".ad-slide");
-  const slideInterval = setInterval(nextSlide, 10000); // Change slide every 10 seconds
+const adSlides = document.querySelectorAll('.ad-slide');
+let currentSlide = 0;
 
-  function nextSlide() {
-      slides[currentSlide].style.display = "none";
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].style.display = "block";
-  }
-});
+function showSlide(slideIndex) {
+    adSlides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % adSlides.length;
+    showSlide(currentSlide);
+}
+
+// Automatically switch slides every 10 seconds
+setInterval(nextSlide, 10000);

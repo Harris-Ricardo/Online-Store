@@ -46,16 +46,16 @@
     grid-template-columns: repeat(1, 1fr);
   }
   
-  .home{
+  .home {
     &__name {
-    font-size: 3rem;
+    font-size: 200px;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid set-text-color($primary-color);
   }
-
+  
   &--last {
-      color: $secondary-color;
+    color:$secondary-color;
       font-weight: 700;
     }
   }

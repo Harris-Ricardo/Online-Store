@@ -72,7 +72,7 @@
     height: 100vh;
     overflow: hidden;
     background: $primary-color;
-    list-style-type: 1rem;
+    list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
     @include transition-ease;
