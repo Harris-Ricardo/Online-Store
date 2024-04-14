@@ -5,12 +5,13 @@
 @import 'about';
 @import 'contact';
 @import 'responsive';
+// @import 'letter';
 
 body {
   background-color: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
 }
 

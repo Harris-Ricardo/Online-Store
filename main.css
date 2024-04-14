@@ -438,11 +438,44 @@
     height: 50vh;
   }
 }
+.container #subscribeForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid 5px;
+  border-radius: 5px;
+}
+.container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.container input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.container button[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.container button[type=submit]:hover {
+  background-color: #038855;
+  transition: all 0.5s ease-in-out;
+}
+
 body {
   background-color: #272727;
   color: #fff;
   height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
 }
 
