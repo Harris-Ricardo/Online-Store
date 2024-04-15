@@ -116,6 +116,14 @@
 .stores footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
+.stores .bottom-link {
+  padding: 3rem;
+  padding-left: 14rem;
+}
+.stores .bottom-link.bottom-link:hover a {
+  color: #ff652f;
+  transition: all 0.5s ease-in-out;
+}
 
 .menu-btn {
   position: absolute;
