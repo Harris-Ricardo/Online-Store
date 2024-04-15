@@ -23,6 +23,15 @@
   color: #ff652f;
   font-weight: 700;
 }
+.home .policies {
+  position: absolute;
+  right: 0;
+  padding-top: 4rem;
+  padding-right: 2rem;
+}
+.home footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
 
 .stores {
   padding-bottom: 2rem;
@@ -407,6 +416,11 @@
     color: #ff652f;
     font-weight: 700;
   }
+  .home .policies {
+    position: absolute;
+    right: 0;
+    padding-top: 5rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .home__name {
@@ -438,39 +452,6 @@
     height: 50vh;
   }
 }
-.container #subscribeForm {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f1f1f1;
-  border: 1px solid 5px;
-  border-radius: 5px;
-}
-.container h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.container input[type=email] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-.container button[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 3px;
-}
-.container button[type=submit]:hover {
-  background-color: #038855;
-  transition: all 0.5s ease-in-out;
-}
-
 body {
   background-color: #272727;
   color: #fff;
