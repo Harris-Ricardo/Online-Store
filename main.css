@@ -369,6 +369,9 @@
 .contact .social-icons a:hover {
   color: #ff652f;
 }
+.contact footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
 
 @media screen and (min-width: 768px) {
   .menu-btn {
@@ -405,6 +408,7 @@
   }
   .contact__list {
     grid-template-columns: repeat(1, 1fr);
+    color: #272727;
   }
   .home__name {
     font-size: 200px;
