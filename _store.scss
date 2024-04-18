@@ -105,8 +105,10 @@
   }
 
   .bottom-link {
-      padding: 3rem;
-      padding-left: 14rem;
+    left: 0;
+    padding: 3rem;
+    text-align: center;
+  
     
     &.bottom-link:hover{
       a{

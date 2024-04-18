@@ -120,8 +120,9 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 .stores .bottom-link {
+  left: 0;
   padding: 3rem;
-  padding-left: 14rem;
+  text-align: center;
 }
 .stores .bottom-link.bottom-link:hover a {
   color: #ff652f;
@@ -448,8 +449,27 @@
   .home .social-icons {
     visibility: visible;
   }
+  .home .policies {
+    position: absolute;
+    right: 0;
+    padding-top: 3rem;
+    padding-right: 2rem;
+  }
+  .home footer {
+    transform: rotate(0.1deg);
+    translate: -3rem, -5rem;
+  }
   .stores__items {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .stores .bottom-link {
+    display: inline-block;
+    padding: 3rem;
+    padding-left: 15rem;
+  }
+  .stores .bottom-link.bottom-link:hover a {
+    color: #ff652f;
+    transition: all 0.5s ease-in-out;
   }
   .contact footer {
     color: #fff;

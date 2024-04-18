@@ -80,11 +80,37 @@
   .social-icons{
     visibility: visible;
   }
+
+  .policies{
+    position: absolute;
+    right: 0;
+    padding-top: 3rem;
+    padding-right: 2rem;
+  }
+
+  footer{
+    transform: rotate(0.1deg);
+    translate: (-3rem, -5rem);
+  }
 }
 
   .stores {
     &__items {
       grid-template-columns: repeat(5, 1fr);//five columns here
+    }
+
+    .bottom-link {
+      display: inline-block;
+      padding: 3rem;
+      padding-left: 15rem;
+    
+      
+      &.bottom-link:hover{
+        a{
+          color: $secondary-color;
+          @include transition-ease;
+        }
+      }
     }
   }
 
