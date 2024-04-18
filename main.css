@@ -26,11 +26,14 @@
 .home .policies {
   position: absolute;
   right: 0;
-  padding-top: 4rem;
+  padding-top: 7rem;
   padding-right: 2rem;
 }
 .home footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
+}
+.home .social-icons {
+  visibility: hidden;
 }
 
 .stores {
@@ -361,16 +364,16 @@
   width: 65%;
 }
 .contact form .social-icons {
-  position: initial;
+  position: fixed;
   margin-top: 2rem;
 }
 .contact .social-icons {
-  position: fixed;
+  position: initial;
   bottom: 1rem;
   left: 1rem;
 }
 .contact .social-icons a {
-  color: #272727;
+  color: #fff;
   padding: 0.4rem;
   transition: all 0.5s ease-in-out;
 }
@@ -378,6 +381,7 @@
   color: #ff652f;
 }
 .contact footer {
+  color: #000;
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
@@ -414,10 +418,6 @@
   .stores .text-secondary {
     font-size: 3rem;
   }
-  .contact__list {
-    grid-template-columns: repeat(1, 1fr);
-    color: #272727;
-  }
   .home__name {
     font-size: 200px;
     padding-bottom: 1rem;
@@ -445,11 +445,29 @@
     color: #ff652f;
     font-weight: 700;
   }
+  .home .social-icons {
+    visibility: visible;
+  }
   .stores__items {
     grid-template-columns: repeat(5, 1fr);
   }
-  .contact__list {
-    grid-template-columns: repeat(1, 1fr);
+  .contact footer {
+    color: #fff;
+    transform: rotate(0.1deg);
+    translate: -3rem, -5rem;
+  }
+  .contact .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .contact .social-icons a {
+    color: #fff;
+    padding: 0.4rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .contact .social-icons a:hover {
+    color: #ff652f;
   }
   .form-group label, .form-group input, .form-group textarea {
     float: none;

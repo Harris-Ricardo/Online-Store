@@ -1,4 +1,4 @@
-.home{
+.home {
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
@@ -24,14 +24,20 @@
       font-weight: 700;
     }
   }
+
   .policies{
     position: absolute;
     right: 0;
-    padding-top: 4rem;
+    padding-top: 7rem;
     padding-right: 2rem;
   }
+
   footer {
     transform: rotate(90deg)
     translate(-3rem, -5rem);
+  }
+
+  .social-icons{
+    visibility: hidden;
   }
 }

@@ -42,11 +42,6 @@
     }
   }
   
-  .contact__list {
-    grid-template-columns: repeat(1, 1fr);
-    color: $primary-color;
-  }
-  
   .home {
     &__name {
     font-size: 200px;
@@ -54,13 +49,13 @@
     margin-bottom: 1rem;
     border-bottom: 2px solid set-text-color($primary-color);
   }
-  
+
   &--last {
     color:$secondary-color;
       font-weight: 700;
     }
 
-    .policies{
+    .policies {
       position: absolute;
       right: 0;
       padding-top: 5rem;
@@ -69,7 +64,7 @@
 }
 
 @include media-lg { 
-.home{
+.home {
   &__name {
     font-size: 5rem;
     padding-bottom: 1rem;
@@ -81,6 +76,10 @@
       font-weight: 700;
     }
   }
+
+  .social-icons{
+    visibility: visible;
+  }
 }
 
   .stores {
@@ -89,13 +88,35 @@
     }
   }
 
-  .contact__list {
-    grid-template-columns: repeat(1, 1fr);
+  .contact {
+    footer{
+      color: set-text-color(set-text-color($secondary-color));
+      transform: rotate(0.1deg);
+      translate: (-3rem, -5rem);
+    }
+
+    .social-icons {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+  
+      a {
+        color: set-text-color(set-text-color($secondary-color));
+        padding: 0.4rem;
+        @include transition-ease;
+  
+        &:hover{
+          color: $secondary-color;
+        }
+      }
+    }
   }
+
   .form-group label, .form-group input, .form-group textarea {
     float: none;
     width: 100%;
   }
+  
   input[type="submit"] {
     width: 100%;
   }
