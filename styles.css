@@ -8,6 +8,8 @@ body{
   height: 150px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+
 }
 
 .ad-slide {
@@ -18,24 +20,22 @@ body{
   padding-bottom: 2rem;
   margin-top: 0.5rem;
   margin-left: 5rem;
+  cursor: pointer;
 }
 
 .ad-slide img {
   width: 10%;
   height: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 
 /* Styles for screens smaller than 768px (typical mobile phones) */
 @media only screen and (max-width: 767px) {
   /* CSS styles to apply */
-  .ad-banner{
-    display: none;
-  }
-  .ad-slide{
-    display: none;
-  }
-  .ad-slide img{
+  .ad-banner,
+  .ad-slide,
+  .ad-slide img {
     display: none;
   }
 }

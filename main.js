@@ -9,20 +9,10 @@ let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-  if (!showMenu) {
-    hamburger.classList.add('open');
-    nav.classList.add('open');
-    menuNav.classList.add('open');
-    navItems.forEach(item => item.classList.add('open'));
+  hamburger.classList.toggle('open');
+  nav.classList.toggle('open');
+  menuNav.classList.toggle('open');
+  navItems.forEach(item => item.classList.toggle('open'));
 
-    showMenu = true;
-  } else {
-    hamburger.classList.remove('open');
-    nav.classList.remove('open');
-    menuNav.classList.remove('open');
-    navItems.forEach(item => item.classList.remove('open'));
-
-
-    showMenu = false;
-  }
+  showMenu =!showMenu;
 }
