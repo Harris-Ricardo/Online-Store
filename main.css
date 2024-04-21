@@ -74,6 +74,7 @@
 }
 .stores__item img {
   width: 100%;
+  height: 20rem;
 }
 .stores__item::after {
   content: "";
