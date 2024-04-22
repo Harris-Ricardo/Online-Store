@@ -1,27 +1,31 @@
+// Select elements
+const adBanner = document.querySelector('.ad-banner');
 const adSlides = document.querySelectorAll('.ad-slide');
+
+// Initialize variables
 let currentSlide = 0;
 const slideInterval = 10000; // 10 seconds
 
+// Function to show a slide
 function showSlide(slideIndex) {
-    adSlides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
-    });
+  // Loop through all slides
+  adSlides.forEach((slide, index) => {
+    // Calculate the translation value based on the slide index
+    const translationValue = 100 * (index - slideIndex);
+
+    // Set the transformation style of the slide
+    slide.style.transform = `translateX(${translationValue}%)`;
+  });
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % adSlides.length;
-    showSlide(currentSlide);
-}
+// Show the initial slide
+showSlide(currentSlide);
 
-// Automatically switch slides every 10 seconds
-setInterval(nextSlide, slideInterval);
+// Set up the slide interval
+setInterval(() => {
+  // Increment the current slide index
+  currentSlide = (currentSlide + 1) % adSlides.length;
 
-// Add keyboard navigation
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowRight') {
-        nextSlide();
-    } else if (event.key === 'ArrowLeft') {
-        currentSlide = (currentSlide - 1 + adSlides.length) % adSlides.length;
-        showSlide(currentSlide);
-    }
-});
+  // Show the next slide
+  showSlide(currentSlide);
+}, slideInterval);
