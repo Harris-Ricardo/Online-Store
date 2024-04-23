@@ -26,11 +26,11 @@
 .home .policies {
   position: absolute;
   right: 0;
-  padding-top: 6rem;
+  padding-top: 5rem;
   padding-right: 2rem;
 }
 .home footer {
-  transform: rotate(90deg) translate(-3rem, -5rem);
+  transform: rotate(0.1deg) translate(-1rem, -5rem);
 }
 .home .social-icons {
   visibility: hidden;
