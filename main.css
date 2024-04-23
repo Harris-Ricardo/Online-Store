@@ -30,7 +30,7 @@
   padding-right: 2rem;
 }
 .home footer {
-  transform: rotate(0.1deg) translate(-1rem, -5rem);
+  transform: rotate(0.1deg) translate(-3rem, -5rem);
 }
 .home .social-icons {
   visibility: hidden;
