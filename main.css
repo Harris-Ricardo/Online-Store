@@ -24,15 +24,14 @@
   font-weight: 700;
 }
 .home footer {
-  bottom: -4rem;
+  bottom: 0rem;
   right: -2rem;
   transform: rotate(0.1deg) translate(-3rem, -5rem);
 }
 .home .policies {
-  bottom: -4rem;
-  position: relative;
-  right: -4rem;
-  padding-right: 2rem;
+  bottom: 2rem;
+  position: absolute;
+  right: 1rem;
 }
 .home .social-icons {
   visibility: hidden;
