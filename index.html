@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="image31.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="import" href="refresh.jsx">
+  <link rel="stylesheet" href="refresh.jsx">
 </head>
 <body>
   <div class="ad-banner">
@@ -113,6 +113,20 @@
       </section>
     </section>
   </main>
+
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "dc1d97bb-6b4c-4283-9b89-bf8b64b5bee5",
+      safari_web_id: "web.onesignal.auto.590358f8-27c0-47d5-a3eb-31f3bec88b46",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 
   <script type="text/javascript">
     var _iub = _iub || [];
