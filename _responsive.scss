@@ -61,13 +61,6 @@
       padding-top: 5rem;
     }
   }
-
-  footer {
-    padding-top: 6rem;
-    right: -2rem;
-    transform: rotate(0.1deg)
-    translate(-3rem, -5rem);
-  }
 }
 
 @include media-lg { 
@@ -89,16 +82,17 @@
   }
 
   .policies{
-    position: absolute;
-    right: 0;
-    padding-top: 3rem;
+    bottom: 3rem;
+    position: relative;
+    right: -40.4rem;
     padding-right: 2rem;
   }
 
   footer {
-    right: 2rem;
-    transform: rotate(0.1deg);
-    translate: (-3rem, -5rem);
+    bottom: -4rem;
+    right: -2rem;
+    transform: rotate(0.1deg)
+    translate(-3rem, -5rem);
   }
 }
 

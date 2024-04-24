@@ -452,15 +452,15 @@
     visibility: visible;
   }
   .home .policies {
-    position: absolute;
-    right: 0;
-    padding-top: 3rem;
+    bottom: 3rem;
+    position: relative;
+    right: -40.4rem;
     padding-right: 2rem;
   }
   .home footer {
-    right: 2rem;
-    transform: rotate(0.1deg);
-    translate: -3rem, -5rem;
+    bottom: -4rem;
+    right: -2rem;
+    transform: rotate(0.1deg) translate(-3rem, -5rem);
   }
   .stores__items {
     grid-template-columns: repeat(5, 1fr);
