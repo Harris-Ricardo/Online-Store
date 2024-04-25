@@ -99,6 +99,20 @@
     &__items {
       grid-template-columns: repeat(4, 1fr);//five columns here
     }
+
+    .common{
+      font-weight: 700;
+      color: $s-color;
+      padding-top: 10rem;
+      font-size: 5rem;
+    }
+    
+    .common1{
+      font-weight: 700;
+      padding-top: 7rem;
+      color: $s-color;
+      font-size: 5rem;
+      }
   }
 
     .bottom-link {

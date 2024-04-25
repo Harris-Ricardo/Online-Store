@@ -50,13 +50,13 @@
   font-weight: 700;
   color: #ff0000;
   padding-top: 10rem;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 .stores .common1 {
   font-weight: 700;
   padding-top: 7rem;
   color: #ff0000;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 .stores__bio-image {
   height: 30vh;
@@ -480,6 +480,18 @@
   }
   .stores__items {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .stores .common {
+    font-weight: 700;
+    color: #ff0000;
+    padding-top: 10rem;
+    font-size: 5rem;
+  }
+  .stores .common1 {
+    font-weight: 700;
+    padding-top: 7rem;
+    color: #ff0000;
+    font-size: 5rem;
   }
   .bottom-link {
     display: inline-block;
