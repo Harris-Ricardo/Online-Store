@@ -5,7 +5,7 @@
 @import 'about';
 @import 'contact';
 @import 'responsive';
-// @import 'letter';
+@import 'sign';
 
 body {
   background-color: $primary-color;
@@ -13,6 +13,13 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
+}
+
+.body{
+  background-color: $p-color;
+  color: $forth-color;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3 {
@@ -33,6 +40,18 @@ header {
   z-index: 2;
   width: 100%;
   padding: 1rem;
+
+  .sign {
+    color: black;
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+.policies{
+  padding: 2rem;
+  position: absolute;
+  right: 1rem;
 }
 
 main{

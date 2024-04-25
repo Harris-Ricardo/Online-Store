@@ -1,6 +1,6 @@
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 30vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -16,7 +16,7 @@
    &__name {
     font-size: 3rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    color: set-text-color(set-text-color($secondary-color));
     border-bottom: 2px solid set-text-color($primary-color);
 
     &--last {
@@ -25,22 +25,17 @@
     }
   }
 
-
-  footer {
-    bottom: 0rem;
-    right: -2rem;
-    transform: rotate(0.1deg)
-    translate(-3rem, -5rem);
+  .policies {
+    bottom: 0;
+    padding: 2rem;
+    position: absolute;
+    right: 1rem;
   }
 
-    .policies{
-      bottom: 2rem;
-      position: absolute;
-      right: 1rem;
-      // padding-right: 2rem;
-    }
-  
-
+  footer {
+    transform: rotate(90deg)
+    translate(-3rem, -5rem);
+  }
 
   .social-icons{
     visibility: hidden;

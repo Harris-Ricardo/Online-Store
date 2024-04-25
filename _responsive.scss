@@ -41,24 +41,23 @@
       font-size: 3rem;
     }
   }
-  
+
   .home {
     &__name {
     font-size: 200px;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
     border-bottom: 2px solid set-text-color($primary-color);
   }
 
   &--last {
-    color:$secondary-color;
+    color: $secondary-color;
       font-weight: 700;
     }
 
-    .policies {
+    .policies{
+      padding: 2rem;
       position: absolute;
-      right: 0;
-      padding-top: 5rem;
+      right: 1rem;
     }
   }
 }
@@ -68,7 +67,7 @@
   &__name {
     font-size: 5rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    color: set-text-color(set-text-color($secondary-color));
     border-bottom: 2px solid set-text-color($primary-color);
 
     &--last {
@@ -82,10 +81,10 @@
   }
 
   .policies{
-    bottom: 3rem;
-    position: relative;
-    right: -40.4rem;
-    padding-right: 2rem;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
   }
 
   footer {
@@ -98,15 +97,15 @@
 
   .stores {
     &__items {
-      grid-template-columns: repeat(5, 1fr);//five columns here
+      grid-template-columns: repeat(4, 1fr);//five columns here
     }
+  }
 
     .bottom-link {
       display: inline-block;
       padding: 3rem;
       padding-left: 15rem;
     
-      
       &.bottom-link:hover{
         a{
           color: $secondary-color;
@@ -212,7 +211,7 @@
   input[type="submit"] {
     width: 100%;
   }
-}
+
 
 @include media-xl {
   .stores__bio-image{

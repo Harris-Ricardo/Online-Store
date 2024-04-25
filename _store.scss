@@ -7,6 +7,20 @@
     font-size: large;
   }
 
+  .common{
+    font-weight: 700;
+    color: $s-color;
+    padding-top: 10rem;
+    font-size: 5rem;
+  }
+  
+  .common1{
+    font-weight: 700;
+    padding-top: 7rem;
+    color: $s-color;
+    font-size: 5rem;
+    }
+
   &__bio-image {
     height: 30vh;
     width: 100%;
@@ -42,10 +56,12 @@
     border-bottom: 5px solid $secondary-color;
     overflow: hidden;
     cursor: pointer;
+    margin-bottom: auto;
+    height: 100%;
 
     img {
       width: 100%;
-      height: 20rem;
+      height: 100%;
     }
 
     &::after {
